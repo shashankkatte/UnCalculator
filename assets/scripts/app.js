@@ -1,7 +1,11 @@
 let currentResult = 0;
-const defaultResult =0;
+const defaultResult = 0;
 
-currentResult = currentResult +10;
+function add(num1, num2) {
+    return num1 + num2;
+}
+
+currentResult = add (1, 4);
 
 // let calculationDescription = '('+defaultResult+'+10)';
 
