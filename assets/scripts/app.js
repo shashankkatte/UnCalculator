@@ -1,15 +1,12 @@
-let currentResult = 0;
 const defaultResult = 0;
+let currentResult = defaultResult;
 
-function add(num1, num2) {
-    return num1 + num2;
+
+function add() {
+    currentResult = currentResult + userInput.value;
+    outputResult(currentResult, '');
 }
 
-currentResult = add (1, 4);
+addBtn.addEventListener('click',add);
 
-// let calculationDescription = '('+defaultResult+'+10)';
 
-// Or we could use a template literal, you can add line breaks here (redundant whitespaces). but in browser you'll need to style using white-space:pre
-let calculationDescription = `( ${defaultResult} + 10 )`;
-
-outputResult(currentResult, calculationDescription);
